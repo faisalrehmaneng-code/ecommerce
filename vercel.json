@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "webpack/webpack.prod.js",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ]
+}
